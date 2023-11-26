@@ -1,20 +1,20 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import "../App.css";
-import { useCounter, useCalculadora } from "../store/useStoreCalc";
+import { useCalculadora } from "../store/useStoreCalc";
 
 const calculadora = () => {
-  const { currentDigit, setCurrentDigit } = useCalculadora();
-  console.log(currentDigit);
+  const { currentDigit, setCurrentDigit, deleteDigit } = useCalculadora();
 
   const handleButtonClick = (value) => {
-    setCurrentDigit((prevDigit) => prevDigit + value);
-    console.log(value);
+    setCurrentDigit(currentDigit + value);
   };
 
   return (
     <section className="">
       <div className="container__digitate">
-        <span className="number__digitate">{currentDigit}</span>
+        <span className="number__digitate">
+          {currentDigit === " " ? "0" : currentDigit.toString()}
+        </span>
       </div>
 
       {/* **************************************/}
@@ -32,23 +32,93 @@ const calculadora = () => {
         >
           8
         </button>
-        <button className="button__number">9</button>
+        <button
+          onClick={() => handleButtonClick("9")}
+          className="button__number"
+        >
+          9
+        </button>
         <button className="button__DEL">DEL</button>
-        <button className="button__number">4</button>
-        <button className="button__number">5</button>
-        <button className="button__number">6</button>
-        <button className="button__number">+</button>
-        <button className="button__number">1</button>
-        <button className="button__number">2</button>
-        <button className="button__number">3</button>
-        <button className="button__number">-</button>
-        <button className="button__number">.</button>
-        <button className="button__number">0</button>
-        <button className="button__number">/</button>
-        <button className="button__number">x</button>
+        <button
+          onClick={() => handleButtonClick("4")}
+          className="button__number"
+        >
+          4
+        </button>
+        <button
+          onClick={() => handleButtonClick("5")}
+          className="button__number"
+        >
+          5
+        </button>
+        <button
+          onClick={() => handleButtonClick("6")}
+          className="button__number"
+        >
+          6
+        </button>
+        <button
+          onClick={() => handleButtonClick("+")}
+          className="button__number"
+        >
+          +
+        </button>
+        <button
+          onClick={() => handleButtonClick("1")}
+          className="button__number"
+        >
+          1
+        </button>
+        <button
+          onClick={() => handleButtonClick("2")}
+          className="button__number"
+        >
+          2
+        </button>
+        <button
+          onClick={() => handleButtonClick("3")}
+          className="button__number"
+        >
+          3
+        </button>
+        <button
+          onClick={() => handleButtonClick("-")}
+          className="button__number"
+        >
+          -
+        </button>
+        <button
+          onClick={() => handleButtonClick(".")}
+          className="button__number"
+        >
+          .
+        </button>
+        <button
+          onClick={() => handleButtonClick("0")}
+          className="button__number"
+        >
+          0
+        </button>
+        <button
+          onClick={() => handleButtonClick("/")}
+          className="button__number"
+        >
+          /
+        </button>
+        <button
+          onClick={() => handleButtonClick("x")}
+          className="button__number"
+        >
+          x
+        </button>
         {/* **************************************/}
         <div className="container__button__reset absolute grid grid-cols-2 grid-rows-1 w-full bottom-0">
-          <button className="button__result reset">RESET</button>
+          <button
+            onClick={() => deleteDigit()}
+            className="button__result reset"
+          >
+            RESET
+          </button>
           <button className="button__result result"> = </button>
         </div>
         {/* **************************************/}

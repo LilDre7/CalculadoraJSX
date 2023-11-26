@@ -8,8 +8,9 @@ const useCounter = create((set) => ({
 }));
 
 const useCalculadora = create((set) => ({
-  currentDigit: "",
+  currentDigit: " ",
   setCurrentDigit: (value) => set({ currentDigit: value }),
+  deleteDigit: () => set({ currentDigit: " " }),
 }));
 
 export { useCounter, useCalculadora };
