@@ -41,6 +41,7 @@ body {
   flex-direction: column;
   align-items: flex-end;
   overflow: hidden;
+  height: 5rem;
 }
 
 .number__digitate {

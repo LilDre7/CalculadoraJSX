@@ -11,6 +11,8 @@ const useCalculadora = create((set) => ({
   currentDigit: " ",
   setCurrentDigit: (value) => set({ currentDigit: value }),
   deleteDigit: () => set({ currentDigit: " " }),
+  deleteOneDigit: () =>
+    set((state) => ({ currentDigit: state.currentDigit.slice(0, -1) })),
 }));
 
 export { useCounter, useCalculadora };

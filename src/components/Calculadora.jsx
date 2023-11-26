@@ -1,9 +1,9 @@
-import { useEffect } from "react";
 import "../App.css";
 import { useCalculadora } from "../store/useStoreCalc";
 
 const calculadora = () => {
-  const { currentDigit, setCurrentDigit, deleteDigit } = useCalculadora();
+  const { currentDigit, setCurrentDigit, deleteDigit, deleteOneDigit } =
+    useCalculadora();
 
   const handleButtonClick = (value) => {
     setCurrentDigit(currentDigit + value);
@@ -38,7 +38,9 @@ const calculadora = () => {
         >
           9
         </button>
-        <button className="button__DEL">DEL</button>
+        <button onClick={() => deleteOneDigit()} className="button__DEL">
+          DEL
+        </button>
         <button
           onClick={() => handleButtonClick("4")}
           className="button__number"
