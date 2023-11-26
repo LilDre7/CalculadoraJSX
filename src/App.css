@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+:root {
+  --main-background: hsl(268, 75%, 9%);
+  --toggle-background: hsl(268, 71%, 12%);
+  --key-pricipal-background: hsl(281, 89%, 26%);
+  --key-shadow-background: hsl(285, 91%, 52%);
+  --key--result-background: hsl(176, 100%, 44%);
+  --key--result-shadow: hsl(177, 92%, 70%);
+  --key--words-background: hsl(268, 47%, 21%);
+  --key--words-shadows: hsl(290, 70%, 36%);
+  --text-color-principal: hsl(52, 100%, 62%);
+  --text-color-DEL-RESET: hsl(0, 0%, 100%);
+  --border-box: 0.6rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--main-background);
+  font-family: 'League Spartan', sans-serif;
+}
+
+
+.title {
+  color: var(--text-color-principal);
+  font-size: 2.5rem;
+  padding-top: 20px;
+}
+
+.container__digitate {
+  background-color: var(--toggle-background);
+  border-radius: var(--border-box);
+  width: 100%;
+  margin-top: 10px;
+  padding: 14px;
+}
+
+.number__digitate {
+  color: var(--text-color-principal);
+  font-size: 2.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.container__numbers {
+  background-color: var(--toggle-background);
+  margin-top: 16px;
+  height: 25rem;
+  display: flex;
+  align-items: center;
+  border-radius: var(--border-box);
+}
+
+.button__number {
+  background-color: var(--key--words-background);
+  margin: 10px;
+  width: 4rem;
+  height: 4rem;
+  font-size: 1.6rem;
+  color: var(--text-color-principal);
+  border-radius: 7px;
+  border-bottom: 5px solid var(--key--words-shadows);
+}
+
+.button__DEL {
+  background-color: var(--key-pricipal-background);
+  margin: 10px;
+  width: 4rem;
+  height: 4rem;
+  font-size: 1.3rem;
+  color: var(--text-color-DEL-RESET);
+  border-radius: 7px;
+  border-bottom: 5px solid var(--key-shadow-background);
+}
+
+.container__button__reset {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.button__result {
+  width: 8.8rem;
+  padding: 1rem;
+  margin:  10px auto;
+  height: 4rem;
+  border-radius: var(--border-box);
+  text-align: center;
+  align-items: center;
+}
+
+.reset {
+  background-color: var(--key-pricipal-background);
+  border-bottom: 5px solid var(--key-shadow-background);
+  color: var(--text-color-DEL-RESET);
+  font-size: 1.3rem;
+  
+}
+
+.result {
+  background-color: var(--key--result-background);
+  border-bottom: 7px solid var(--key--result-shadow);
+  font-size: 1.8rem;
+}

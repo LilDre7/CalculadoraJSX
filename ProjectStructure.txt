@@ -1,0 +1,21 @@
+Voy a crear una calculadora
+
+Vamos a usar para este proyecto: 
+
+- ReactJs ✅
+- Tailwind ✅
+- Zustand ✅
+- Material UI
+- GoogleFonts ✅
+
+Es una calculadora simple debe poder:
+
+- Sumar 
+- Restar 
+- Multiplicar 
+- Dividir 
+- Resetear toda la calculadora
+- Eliminar los datos de la calculadora
+- Debe dar el resultado de la suma
+
+
