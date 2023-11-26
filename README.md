@@ -1,1 +1,1 @@
-# Proyecto Calculadora JSX 📱
+# Proyecto Calculadora REACT - JS 📱 
