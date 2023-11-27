@@ -6,7 +6,6 @@ const Calculadora = () => {
     currentDigit,
     setCurrentDigit,
     deleteDigit,
-    deleteOneDigit,
     addDigit,
     resultOperation,
   } = useCalculadora();
@@ -15,8 +14,8 @@ const Calculadora = () => {
     setCurrentDigit(currentDigit + value);
   };
 
-  const handleResultOperation = () => {
-    setCurrentDigit(resultOperation());
+  const deleteOneDigit = () => {
+    setCurrentDigit(currentDigit.slice(0, -1));
   };
 
   return (

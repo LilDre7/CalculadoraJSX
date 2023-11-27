@@ -1,6 +1,6 @@
 import "./App.css";
 import Calculadora from "./components/Calculadora";
-import Themes from "./components/themes/themes";
+import Themes from "./components/themes/Themes";
 
 function App() {
   return (
