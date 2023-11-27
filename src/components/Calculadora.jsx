@@ -15,7 +15,9 @@ const Calculadora = () => {
   };
 
   const deleteOneDigit = () => {
-    setCurrentDigit(currentDigit.slice(0, -1));
+    if (typeof currentDigit === "string" && currentDigit.length > 0) {
+      setCurrentDigit(currentDigit.slice(0, -1));
+    }
   };
 
   return (
