@@ -15,6 +15,10 @@ const Calculadora = () => {
     setCurrentDigit(currentDigit + value);
   };
 
+  const handleResultOperation = () => {
+    setCurrentDigit(resultOperation());
+  };
+
   return (
     <section className="">
       <div className="container__digitate">
@@ -66,7 +70,7 @@ const Calculadora = () => {
           6
         </button>
         <button onClick={() => addDigit("+")} className="button__number">
-          +
+          x
         </button>
         <button
           onClick={() => handleButtonClick("1")}
