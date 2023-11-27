@@ -29,7 +29,6 @@ body {
 .title {
   color: var(--text-color-principal);
   font-size: 2.5rem;
-  padding-top: 20px;
 }
 
 .container__digitate {
@@ -111,3 +110,19 @@ body {
   border-bottom: 7px solid var(--key--result-shadow);
   font-size: 1.8rem;
 }
+
+.title__theme {
+  font-size: 1.1rem;
+  color: var(--text-color-principal);
+  padding-right: 1rem;
+}
+
+.input {
+  cursor: pointer;
+  width: 20px;
+  transition: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  color: rebeccapurple;
+}
+

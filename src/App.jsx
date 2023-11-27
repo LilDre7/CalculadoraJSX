@@ -1,11 +1,11 @@
 import "./App.css";
-import Title from "./components/Title";
-import Calculadora from "./components/calculadora";
+import Calculadora from "./components/Calculadora";
+import Themes from "./components/themes/themes";
 
 function App() {
   return (
     <main className="h-screen w-full max-w-xs mx-auto">
-      <Title />
+      <Themes />
       <Calculadora />
     </main>
   );

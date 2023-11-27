@@ -1,7 +1,7 @@
 import "../App.css";
 import { useCalculadora } from "../store/useStoreCalc";
 
-const calculadora = () => {
+const Calculadora = () => {
   const {
     currentDigit,
     setCurrentDigit,
@@ -138,4 +138,4 @@ const calculadora = () => {
   );
 };
 
-export default calculadora;
+export default Calculadora;
