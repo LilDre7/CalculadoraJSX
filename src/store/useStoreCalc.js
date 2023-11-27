@@ -1,4 +1,5 @@
 import { create } from "zustand";
+import * as math from "mathjs";
 
 const useCounter = create((set) => ({
   counter: 0,
@@ -13,6 +14,12 @@ const useCalculadora = create((set) => ({
   deleteDigit: () => set({ currentDigit: " " }),
   deleteOneDigit: () =>
     set((state) => ({ currentDigit: state.currentDigit.slice(0, -1) })),
+  addDigit: (value) =>
+    set((state) => ({ currentDigit: state.currentDigit + value })),
+  resultOperation: () =>
+    set((state) => ({
+      currentDigit: math.evaluate(state.currentDigit.replace(/x/g, "*")),
+    })),
 }));
 
 export { useCounter, useCalculadora };

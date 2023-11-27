@@ -2,8 +2,14 @@ import "../App.css";
 import { useCalculadora } from "../store/useStoreCalc";
 
 const calculadora = () => {
-  const { currentDigit, setCurrentDigit, deleteDigit, deleteOneDigit } =
-    useCalculadora();
+  const {
+    currentDigit,
+    setCurrentDigit,
+    deleteDigit,
+    deleteOneDigit,
+    addDigit,
+    resultOperation,
+  } = useCalculadora();
 
   const handleButtonClick = (value) => {
     setCurrentDigit(currentDigit + value);
@@ -13,7 +19,7 @@ const calculadora = () => {
     <section className="">
       <div className="container__digitate">
         <span className="number__digitate">
-          {currentDigit === " " ? "0" : currentDigit.toString()}
+          {currentDigit === " " ? "0" : currentDigit}
         </span>
       </div>
 
@@ -38,7 +44,7 @@ const calculadora = () => {
         >
           9
         </button>
-        <button onClick={() => deleteOneDigit()} className="button__DEL">
+        <button onClick={() => deleteOneDigit("DEL")} className="button__DEL">
           DEL
         </button>
         <button
@@ -59,10 +65,7 @@ const calculadora = () => {
         >
           6
         </button>
-        <button
-          onClick={() => handleButtonClick("+")}
-          className="button__number"
-        >
+        <button onClick={() => addDigit("+")} className="button__number">
           +
         </button>
         <button
@@ -113,6 +116,7 @@ const calculadora = () => {
         >
           x
         </button>
+
         {/* **************************************/}
         <div className="container__button__reset absolute grid grid-cols-2 grid-rows-1 w-full bottom-0">
           <button
@@ -121,7 +125,12 @@ const calculadora = () => {
           >
             RESET
           </button>
-          <button className="button__result result"> = </button>
+          <button
+            onClick={() => resultOperation()}
+            className="button__result result"
+          >
+            =
+          </button>
         </div>
         {/* **************************************/}
       </div>
