@@ -44,7 +44,7 @@ const Calculadora = () => {
         >
           9
         </button>
-        <button onClick={() => deleteOneDigit("DEL")} className="button__DEL">
+        <button onClick={() => deleteOneDigit()} className="button__DEL">
           DEL
         </button>
         <button
@@ -114,7 +114,7 @@ const Calculadora = () => {
           onClick={() => handleButtonClick("x")}
           className="button__number"
         >
-          x
+          X
         </button>
 
         {/* **************************************/}
