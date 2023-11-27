@@ -18,4 +18,6 @@ Es una calculadora simple debe poder:
 - Eliminar los datos de la calculadora
 - Debe dar el resultado de la suma
 
+Crear un README para mi GITHUB 🛠️
+
 
