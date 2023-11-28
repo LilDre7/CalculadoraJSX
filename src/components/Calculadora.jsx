@@ -10,9 +10,10 @@ const Calculadora = () => {
     resultOperation,
   } = useCalculadora();
 
-  const handleButtonClick = (value) => {
+   /* const handleButtonClick = (value) => {
     setCurrentDigit(currentDigit + value);
   };
+  */
 
   const deleteOneDigit = () => {
     if (typeof currentDigit === "string" && currentDigit.length > 0) {
@@ -20,7 +21,15 @@ const Calculadora = () => {
     }
   };
 
-  const limitExpression = (value) => {};
+  // Debo crear una funtion que no me permita colocar 2 veces seguidas una expresion alegebraica
+
+  const handleButtonClick = (value) => {
+    const lastChar = currentDigit[currentDigit.length - 1];
+    if (/[+\-*/x]/.test(lastChar) && /[+\-*/x]/.test(value)) {
+      return; // Evita agregar una expresión algebraica consecutiva
+    }
+    setCurrentDigit(currentDigit + value);
+  };
 
   return (
     <section className="">
@@ -72,8 +81,8 @@ const Calculadora = () => {
         >
           6
         </button>
-        <button onClick={() => addDigit("+")} className="button__number">
-          x
+        <button onClick={() => handleButtonClick("+")} className="button__number">
+          +
         </button>
         <button
           onClick={() => handleButtonClick("1")}
@@ -121,7 +130,7 @@ const Calculadora = () => {
           onClick={() => handleButtonClick("x")}
           className="button__number"
         >
-          X
+          x
         </button>
 
         {/* **************************************/}

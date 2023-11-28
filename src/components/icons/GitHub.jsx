@@ -26,7 +26,7 @@ const GitHub = () => {
       </span>
       <div class="group-hover:opacity-100 opacity-0  top-5 absolute z-10 inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-500 bg-sky-600 rounded-lg shadow-sm before:w-3 before:h-3 before:rotate-45 before:-top-1 before:left-20 before:bg-sky-600 before:absolute">
         See my profile!
-      </div>
+      </div> 
     </button>
   );
 };
