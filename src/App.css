@@ -12,6 +12,7 @@
   --text-color-principal: hsl(52, 100%, 62%);
   --text-color-DEL-RESET: hsl(0, 0%, 100%);
   --border-box: 0.6rem;
+  --central-box: 1rem;
 }
 
 * {
