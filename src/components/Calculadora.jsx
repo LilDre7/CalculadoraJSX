@@ -20,6 +20,8 @@ const Calculadora = () => {
     }
   };
 
+  const limitExpression = (value) => {};
+
   return (
     <section className="">
       <div className="container__digitate">
