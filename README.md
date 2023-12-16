@@ -2,6 +2,6 @@
 
 Un proyexto de inspiracion se front-mentor 
 
-## Programado por 
+## By
 
 ᴀʟᴠᴀʀᴏ ᴀʙᴜʀᴛᴏ ᴏᴄᴀᴍᴘᴏ
