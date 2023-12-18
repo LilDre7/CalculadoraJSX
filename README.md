@@ -6,6 +6,8 @@ Un proyexto de inspiracion se front-mentor
 
 Front-mentor
 
+Deploy 
+
 ## Developer
 
 ᴀʟᴠᴀʀᴏ ᴀʙᴜʀᴛᴏ ᴏᴄᴀᴍᴘᴏ
