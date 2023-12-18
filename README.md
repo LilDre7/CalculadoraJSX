@@ -6,7 +6,9 @@ Un proyexto de inspiracion se front-mentor
 
 Front-mentor
 
-Deploy 
+## Deploy ✈️
+
+npm run dev
 
 ## Developer
 
