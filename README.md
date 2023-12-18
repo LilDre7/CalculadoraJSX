@@ -6,6 +6,6 @@ Un proyexto de inspiracion se front-mentor
 
 Front-mentor
 
-## By
+## Developer
 
 ᴀʟᴠᴀʀᴏ ᴀʙᴜʀᴛᴏ ᴏᴄᴀᴍᴘᴏ
