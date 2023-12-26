@@ -10,6 +10,6 @@ Front-mentor
 
 npm run dev
 
-## Developer
+## Developer 🥷🏾
 
 ᴀʟᴠᴀʀᴏ ᴀʙᴜʀᴛᴏ ᴏᴄᴀᴍᴘᴏ 
