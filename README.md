@@ -1,6 +1,6 @@
 ## Calculadora con ReactJs ⚛️
 
-Un proyecto de inspiracion se front-mentor
+Un proyecto de inspiracion se front-mentor 🧑🏾‍🚀
 
 ## Instalación 🛠️
 
