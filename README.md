@@ -1,10 +1,10 @@
 ## Calculadora con ReactJs ⚛️
 
-Un proyexto de inspiracion se front-mentor
+Un proyecto de inspiracion se front-mentor
 
 ## instalación
 
-nm
+npm install 
 
 ## Inspiracion 🔆 
 
