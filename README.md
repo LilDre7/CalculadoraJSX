@@ -2,7 +2,7 @@
 
 Un proyecto de inspiracion se front-mentor
 
-## instalación 🛠️
+## Instalación 🛠️
 
 npm install 
 
