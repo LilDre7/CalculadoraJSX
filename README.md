@@ -2,6 +2,10 @@
 
 Un proyexto de inspiracion se front-mentor
 
+## instalación
+
+nm
+
 ## Inspiracion 🔆 
 
 Front-mentor
