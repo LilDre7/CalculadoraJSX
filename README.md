@@ -13,7 +13,7 @@ Front-mentor
 ## Deploy ✈️
 
 npm run dev
- 0n80
+ 0n800
 ## Developer 🥷🏾
 
 ᴀʟᴠᴀʀᴏ ᴀʙᴜʀᴛᴏ ᴏᴄᴀᴍᴘᴏ 
