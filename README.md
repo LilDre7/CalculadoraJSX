@@ -13,7 +13,7 @@ Front-mentor
 ## Deploy ✈️
 
 npm run dev
- 
+
 ## Developer 🥷🏾
 
 ᴀʟᴠᴀʀᴏ ᴀʙᴜʀᴛᴏ ᴏᴄᴀᴍᴘᴏ 
