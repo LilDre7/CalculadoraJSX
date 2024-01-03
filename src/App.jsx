@@ -1,6 +1,6 @@
 import "./App.css";
 import Calculadora from "./components/Calculadora";
-import Themes from "./components/themes/Themes";
+import Themes from "./components/themes/Themes"
 import Footer from "./components/Footer";
 
 function App() {
