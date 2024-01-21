@@ -1,4 +1,4 @@
-## Calculadora con ReactJs ⚛️ 8
+## Calculadora con ReactJs ⚛️ 
 
 Un proyecto de inspiracion se front-mentor 🧑🏾‍🚀
 
